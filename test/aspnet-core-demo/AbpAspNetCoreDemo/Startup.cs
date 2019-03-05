@@ -60,11 +60,11 @@ namespace AbpAspNetCoreDemo
             //Configure Abp and Dependency Injection. Should be called last.
             return services.AddAbp<AbpAspNetCoreDemoModule>(options =>
             {
-                options.PlugInSources.Add(
-                    new AssemblyFileListPlugInSource(
-                        Path.Combine(_env.ContentRootPath, @"..\AbpAspNetCoreDemo.PlugIn\bin\Debug\netstandard2.0\AbpAspNetCoreDemo.PlugIn.dll")
-                    )
-                );
+                //options.PlugInSources.Add(
+                //    new AssemblyFileListPlugInSource(
+                //        Path.Combine(_env.ContentRootPath, @"..\AbpAspNetCoreDemo.PlugIn\bin\Debug\netstandard2.0\AbpAspNetCoreDemo.PlugIn.dll")
+                //    )
+                //);
 
                 //Configure Log4Net logging
                 options.IocManager.IocContainer.AddFacility<LoggingFacility>(

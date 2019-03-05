@@ -8,6 +8,7 @@ using Abp.Modules;
 using Abp.Reflection.Extensions;
 using AbpAspNetCoreDemo.Core;
 using AbpAspNetCoreDemo.Db;
+using AbpAspNetCoreDemo.PlugIn;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -16,6 +17,7 @@ namespace AbpAspNetCoreDemo
 {
     [DependsOn(
         typeof(AbpAspNetCoreModule),
+        typeof(AbpAspNetCoreDemoPlugInModule),
         typeof(AbpAspNetCoreDemoCoreModule),
         typeof(AbpEntityFrameworkCoreModule),
         typeof(AbpCastleLog4NetModule)

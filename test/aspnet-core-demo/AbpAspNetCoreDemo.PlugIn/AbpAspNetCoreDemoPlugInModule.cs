@@ -11,7 +11,7 @@ namespace AbpAspNetCoreDemo.PlugIn
     {
         public override void PreInitialize()
         {
-
+         
             Configuration.EmbeddedResources.Sources.Add(
                 new EmbeddedResourceSet(
                     "/Views/",
